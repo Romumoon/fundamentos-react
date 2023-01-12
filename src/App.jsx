@@ -1,6 +1,9 @@
 import React from "react";
 import './App.css'
 
+import UsuarioInfoIfElse from "./condicional/UsuarioInfoIfElse";
+import UsuarioInfo from "./condicional/UsuarioInfo";
+import ParOuImpar from "./condicional/ParOuImpar";
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
@@ -17,7 +20,13 @@ export default () => (
 
         <div className="Cards">
 
-            <Card titulo="#07 - Desafio" color="#ff007f ">
+            <Card  titulo="#08 - Renderização Condicional" color="#982395">
+                <ParOuImpar numero={20}></ParOuImpar>
+                <UsuarioInfo usuario={{nome: 'Rômulo'}}></UsuarioInfo>
+                <UsuarioInfoIfElse></UsuarioInfoIfElse>
+            </Card>
+
+            <Card titulo="#07 - Desafio" color="#ff007f">
                 <TabelaProdutos></TabelaProdutos>
             </Card>
 

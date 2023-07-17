@@ -14,12 +14,17 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+            <Card  titulo="#10 - Comunicação Indireta" color="#E966A0">
+                <IndiretaPai/>
+            </Card>
 
             <Card  titulo="#09 - Comunicação Direta" color="#D5CABD">
                 <DiretaPai/>

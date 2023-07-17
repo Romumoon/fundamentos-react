@@ -13,12 +13,17 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import DiretaPai from "./components/comunicacao/DiretaPai";
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+            <Card  titulo="#09 - Comunicação Direta" color="#D5CABD">
+                <DiretaPai/>
+            </Card>
 
             <Card  titulo="#08 - Renderização Condicional" color="#982395">
                 <ParOuImpar numero={20}></ParOuImpar>
